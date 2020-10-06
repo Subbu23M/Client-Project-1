@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+nav ul {
+  border-top: 6px solid #E6AF2E;
+  background-color: #191716;
+}
+
+nav ul li a {
+  display: block;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #E6AF2E;
+  padding: 15px 25px;
+}
+
+nav ul li a:hover {
+  color: #E0E2DB;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 25px;
+  color: #191716;
+  margin-left: -2.5rem;
+  background-color: #E6AF2E;
+}
+
+.logo:hover {
+  background-color: #E0E2DB;
+  color: #E6AF2E;
+}
+
+@media screen and (min-width: 576px) {
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav ul li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+  }
+  nav ul .logo {
+    display: block;
+  }
+  nav ul .logo .fontawesome {
+    display: none;
+  }
+}
+
+.fontawesome {
+  margin-top: .4em;
+}
+
+.height {
+  min-height: 100vh;
+}
+
+#banner {
+  background: url(./banner.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -1em;
+}
+
+.Nikhil {
+  color: lightcoral;
+  font-size: 1.2rem;
+}
+
+.card-text {
+  line-height: 2;
+  color: wheat;
+}
+
+.gowri {
+  font-size: 1.2rem;
+}
+
+.underline {
+  width: 50%;
+  height: 0.3rem;
+  background-color: teal;
+}
+
+.btn {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: maroon;
+  background-color: mintcream;
+}
+
+#contact {
+  background: url(./contact.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*# sourceMappingURL=main.css.map */

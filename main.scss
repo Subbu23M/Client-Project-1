@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+
+// Universal Effects
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+// Colors:
+
+$YellowColor:#E6AF2E;
+$BlackColor:#191716;
+$WhiteColor:#E0E2DB;
+
+// End of Universal Effects
+
+nav{
+    ul{
+        // border-top:size style color
+        border-top: 6px solid $YellowColor;
+
+        background-color:$BlackColor;
+    
+        li{
+            a{
+                // Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width
+                display: block;
+    
+                text-align: center;
+                font-size:1.25rem;
+                color: $YellowColor;
+    
+                // padding: top & bottom left & right
+                padding: 15px 25px;
+            }
+
+            a:hover{
+                color:$WhiteColor;
+            }
+        }  
+    }           
+}
+
+.logo{
+    // Converts column into row
+    display: flex;
+
+    justify-content: space-between;
+    font-size: 25px;
+    color: $BlackColor;
+    margin-left: -2.5rem;
+    background-color: $YellowColor;
+}
+
+.logo:hover{
+    background-color: $WhiteColor;
+    color: $YellowColor;
+}
+
+// Media Queries
+// After 576px width these styles applied
+
+@media screen and (min-width:576px){
+    nav ul{
+        // Converts column into row
+        display: flex;
+
+        // The flex-wrap property specifies whether the flexible items should wrap or not.
+        // Specifies that the flexible items will wrap if necessary
+        flex-wrap: wrap;
+
+        // Align each item on Y-axis
+        align-items: baseline;
+
+        justify-content: space-around;
+
+        li{
+            // flex: flex-grow flex-shrink flex-basis|auto;
+            flex: 1 0 auto;
+        }
+
+        // Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width
+        .logo{
+            display: block;
+        }
+
+        .logo .fontawesome{
+            display: none;
+        }
+    }
+}
+
+.fontawesome{
+    margin-top: .4em;
+}
+
+.height{
+    min-height: 100vh;
+}
+
+#banner{
+    background: url(./banner.png);
+
+    // parallax affects
+    background-attachment: fixed;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -1em;
+}
+
+.Nikhil{
+    color: lightcoral;
+    font-size: 1.2rem;
+}
+
+.card-text{
+    line-height: 2;
+    color: wheat;
+}
+
+.gowri{
+    font-size: 1.2rem;
+}
+
+.underline{
+    width: 50%;
+    height: 0.3rem;
+    background-color: teal;
+}
+
+.btn{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: maroon;
+    background-color: mintcream;
+}
+
+#contact{
+    background: url(./contact.jpg);
+
+    // parallax affects
+    background-attachment: fixed;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
